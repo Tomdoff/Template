@@ -8,7 +8,7 @@ using Supermarket.Domain.Services;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FluentAssertions;
+using FluentAssertions; // https://fluentassertions.com/documentation/ for more information
 using Xunit;
 
 namespace Supermarket.UnitTests
