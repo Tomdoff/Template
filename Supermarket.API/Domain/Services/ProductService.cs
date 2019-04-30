@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Supermarket.Domain.Models;
-using Supermarket.Domain.Repositories;
+using Supermarket.API.Domain.Models;
+using Supermarket.API.Domain.Repositories;
 
-namespace Supermarket.Domain.Services{
+namespace Supermarket.API.Domain.Services{
 	public class ProductService : IProductService{
 		private readonly IProductRepository _productRepository;
 

@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Supermarket.API\Supermarket.API.csproj" />
-    <ProjectReference Include="..\Supermarket.Domain\Supermarket.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

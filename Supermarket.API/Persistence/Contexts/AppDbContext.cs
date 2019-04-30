@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Supermarket.Domain.Models;
+using Supermarket.API.Domain.Models;
 
 namespace Supermarket.API.Persistence.Contexts
 {

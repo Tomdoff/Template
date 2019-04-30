@@ -3,12 +3,13 @@ using Moq;
 using Supermarket.API.Controllers;
 using Supermarket.API.Mapping;
 using Supermarket.API.Resources;
-using Supermarket.Domain.Models;
-using Supermarket.Domain.Services;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FluentAssertions; // https://fluentassertions.com/documentation/ for more information
+using FluentAssertions;
+using Supermarket.API.Domain.Models;
+using Supermarket.API.Domain.Services;
+// https://fluentassertions.com/documentation/ for more information
 using Xunit;
 
 namespace Supermarket.UnitTests

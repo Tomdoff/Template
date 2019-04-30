@@ -1,6 +1,6 @@
-using Supermarket.Domain.Models;
+using Supermarket.API.Domain.Models;
 
-namespace Supermarket.Domain.Services {
+namespace Supermarket.API.Domain.Services {
 		public class CategoryResponse : BaseResponse {
 				public Category Category { get; private set; }
 

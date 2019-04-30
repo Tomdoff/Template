@@ -1,4 +1,4 @@
-namespace Supermarket.Domain.Models
+namespace Supermarket.API.Domain.Models
 {
     public class Product
     {

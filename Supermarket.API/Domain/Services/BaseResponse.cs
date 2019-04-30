@@ -1,4 +1,4 @@
-namespace Supermarket.Domain.Services {
+namespace Supermarket.API.Domain.Services {
     public abstract class BaseResponse {
         public bool Success { get; protected set; }
         public string Message { get; protected set; }

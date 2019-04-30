@@ -5,10 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Supermarket.API.Domain.Repositories;
+using Supermarket.API.Domain.Services;
 using Supermarket.API.Persistence.Contexts;
 using Supermarket.API.Persistence.Repositories;
-using Supermarket.Domain.Repositories;
-using Supermarket.Domain.Services;
 
 namespace Supermarket.API
 {

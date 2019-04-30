@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Supermarket.Domain.Repositories{
+namespace Supermarket.API.Domain.Repositories{
 	public interface IUnitOfWork{
 		Task CompleteAsync();
 	}

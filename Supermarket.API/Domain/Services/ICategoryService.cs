@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Supermarket.Domain.Models;
+using Supermarket.API.Domain.Models;
 
-namespace Supermarket.Domain.Services{
+namespace Supermarket.API.Domain.Services{
     public interface ICategoryService{
         Task<IEnumerable<Category>> ListAsync();
         Task<CategoryResponse> SaveAsync(Category category);
