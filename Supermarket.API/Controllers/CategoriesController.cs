@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Services;
-using Supermarket.API.Extensions;
+using Supermarket.Domain.Models;
+using Supermarket.Domain.Services;
 using Supermarket.API.Resources;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace Supermarket.API.Controllers {
+namespace Supermarket.API.Controllers
+{
     [ApiController]
     [Route ("api/[controller]")]
     public class CategoriesController : ControllerBase {

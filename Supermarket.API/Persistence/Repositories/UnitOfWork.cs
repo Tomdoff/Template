@@ -1,6 +1,6 @@
-using System.Threading.Tasks;
-using Supermarket.API.Domain.Repositories;
 using Supermarket.API.Persistence.Contexts;
+using Supermarket.Domain.Repositories;
+using System.Threading.Tasks;
 
 namespace Supermarket.API.Persistence.Repositories
 {

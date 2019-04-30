@@ -1,12 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Supermarket.API.Persistence.Contexts;
+using Supermarket.Domain.Models;
+using Supermarket.Domain.Repositories;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Repositories;
-using Supermarket.API.Persistence.Contexts;
 
-namespace Supermarket.API.Persistence.Repositories{
-	public class ProductRepository: BaseRepository, IProductRepository{
+namespace Supermarket.API.Persistence.Repositories
+{
+    public class ProductRepository: BaseRepository, IProductRepository{
 		public ProductRepository(AppDbContext context) : base(context){
 		}
 

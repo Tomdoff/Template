@@ -1,10 +1,11 @@
 using AutoMapper;
-using Supermarket.API.Domain.Models;
 using Supermarket.API.Extensions;
 using Supermarket.API.Resources;
+using Supermarket.Domain.Models;
 
-namespace Supermarket.API.Mapping {
-	public class ModelToResourceProfile : Profile {
+namespace Supermarket.API.Mapping
+{
+    public class ModelToResourceProfile : Profile {
 		public ModelToResourceProfile () {
 			CreateMap<Category, CategoryResource> ();
 

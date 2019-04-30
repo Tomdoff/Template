@@ -1,10 +1,10 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Services;
 using Supermarket.API.Resources;
+using Supermarket.Domain.Models;
+using Supermarket.Domain.Services;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Supermarket.API.Controllers
 {
