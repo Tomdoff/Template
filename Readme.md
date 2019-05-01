@@ -3,6 +3,7 @@
 ### Categories
 -   curl -d '{"name": "tinned"}' -H "Content-Type: application/json" -X POST https://localhost:5001/api/categories -k
 -   curl -X GET https://localhost:5001/api/categories -k 
+-   curl -X DELETE https://localhost:5001/api/categories/?id=1 -k
     -   curl uses the `-d` flag to denote data 
     -   `-H` allows you to add headers (such as content-type: application/json)
     -   `-X` allows you to specify the HTTP verb for the request
