@@ -4,8 +4,11 @@ using Supermarket.API.Controllers;
 using Supermarket.API.Mapping;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using FluentAssertions;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Supermarket.API.Domain.Models;
 using Supermarket.API.Domain.Services;
 using Supermarket.Resources;
@@ -17,14 +20,17 @@ namespace Supermarket.UnitTests
     public class CategoriesControllerTests
     {
         [Fact]
-        public async Task GetAllAsync_ReturnsAListOfAllCategories()
+        public async Task GetAllAsync_WithValidParameters_ReturnsOkResonseWithListOfAllCategories()
         {
 			//set up
 	        var controller = GetController();
             var expectedResult = GetTestCategoryResources();
 
-            var result = await controller.GetAllAsync();
-            var actualResult = result.ToList();
+            var response = await controller.GetAllAsync() as ObjectResult;
+            var actualResult = response.Value as List<CategoryResource>;
+            var responseCode = (int)response.StatusCode;
+
+            responseCode.Should().Be((int) HttpStatusCode.OK);
             expectedResult.Should().BeEquivalentTo(actualResult);
         }
 
