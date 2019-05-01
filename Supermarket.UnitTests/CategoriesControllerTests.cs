@@ -2,13 +2,13 @@ using AutoMapper;
 using Moq;
 using Supermarket.API.Controllers;
 using Supermarket.API.Mapping;
-using Supermarket.API.Resources;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FluentAssertions;
 using Supermarket.API.Domain.Models;
 using Supermarket.API.Domain.Services;
+using Supermarket.Resources;
 // https://fluentassertions.com/documentation/ for more information
 using Xunit;
 

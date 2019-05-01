@@ -1,6 +1,6 @@
 using AutoMapper;
 using Supermarket.API.Domain.Models;
-using Supermarket.API.Resources;
+using Supermarket.Resources;
 
 namespace Supermarket.API.Mapping
 {
